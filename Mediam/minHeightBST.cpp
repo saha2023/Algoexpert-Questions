@@ -38,8 +38,8 @@ void recursive(int l, int r, BST* &root, vector<int>&arr){
 }
 BST *minHeightBst(vector<int> arr) {
   // Write your code here.
-  BST* root = nullptr;
+  BST* root = tmp = nullptr;
   int n = arr.size();
   recursive(0, n, root, arr);
-  return root;
+  return tmp;
 }
